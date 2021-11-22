@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSCompGraph", "CSCompGraph\CSCompGraph.csproj", "{45ABB7E3-ADB9-451E-932D-516FB0FB436D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCColorPicker", "WCColorPicker\WCColorPicker.csproj", "{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45ABB7E3-ADB9-451E-932D-516FB0FB436D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45ABB7E3-ADB9-451E-932D-516FB0FB436D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45ABB7E3-ADB9-451E-932D-516FB0FB436D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45ABB7E3-ADB9-451E-932D-516FB0FB436D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

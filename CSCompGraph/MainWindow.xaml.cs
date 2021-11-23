@@ -24,9 +24,9 @@ namespace SoloVova.Dev.CSCompGraph{
         //     }
         // }
         
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            panel.IsFlipped = !panel.IsFlipped;
-        }
+        // private void Button_Click(object sender, RoutedEventArgs e)
+        // {
+        //     panel.IsFlipped = !panel.IsFlipped;
+        // }
     }
 }

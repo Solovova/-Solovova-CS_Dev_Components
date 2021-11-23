@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSCompGraph", "CSCompGraph\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCColorPicker", "WCColorPicker\WCColorPicker.csproj", "{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCGraph", "WCGraph\WCGraph.csproj", "{10CC79F8-D4A0-4CEB-B2EE-8A0101B7A55A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B6E8AAE-BF22-4936-A985-EBB3370F72E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CC79F8-D4A0-4CEB-B2EE-8A0101B7A55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CC79F8-D4A0-4CEB-B2EE-8A0101B7A55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CC79F8-D4A0-4CEB-B2EE-8A0101B7A55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CC79F8-D4A0-4CEB-B2EE-8A0101B7A55A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

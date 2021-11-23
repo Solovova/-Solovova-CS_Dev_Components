@@ -6,19 +6,55 @@
         mc:Ignorable="d"
         xmlns:wcColorPicker="clr-namespace:SoloVova.Dev.WCColorPicker;assembly=WCColorPicker"
         Title="MainWindow" Height="450" Width="800">
+    <!-- <Grid> -->
+    <!--     <Grid.RowDefinitions> -->
+    <!--         <RowDefinition Height="auto" /> -->
+    <!--         <RowDefinition Height="20" /> -->
+    <!--         <RowDefinition Height="auto" /> -->
+    <!--         <RowDefinition Height="20" /> -->
+    <!--     </Grid.RowDefinitions> -->
+    <!--     <wcColorPicker:ColorPicker Grid.Row="0" x:Name="graphCandle0" Margin="5" Color="Blue" Padding="5"  -->
+    <!--                           ColorChanged="graphCandle_ColorChanged0"></wcColorPicker:ColorPicker> -->
+    <!--     <TextBox Grid.Row="1" x:Name="Txb0"></TextBox> -->
+    <!--      -->
+    <!--     <wcColorPicker:ColorPicker Grid.Row="2" x:Name="graphCandle1" Margin="5" Color="Brown"  -->
+    <!--                           ColorChanged="graphCandle_ColorChanged1"></wcColorPicker:ColorPicker> -->
+    <!--     <TextBox Grid.Row="3" x:Name="Txb1"></TextBox> -->
+    <!-- </Grid> -->
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="20" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="20" />
-        </Grid.RowDefinitions>
-        <wcColorPicker:ColorPicker Grid.Row="0" x:Name="graphCandle0" Margin="5" Color="Blue" Padding="5" 
-                              ColorChanged="graphCandle_ColorChanged0"></wcColorPicker:ColorPicker>
-        <TextBox Grid.Row="1" x:Name="Txb0"></TextBox>
-        
-        <wcColorPicker:ColorPicker Grid.Row="2" x:Name="graphCandle1" Margin="5" Color="Brown" 
-                              ColorChanged="graphCandle_ColorChanged1"></wcColorPicker:ColorPicker>
-        <TextBox Grid.Row="3" x:Name="Txb1"></TextBox>
+        <wcColorPicker:FlipPanel x:Name="panel" BorderBrush="DarkOrange"
+                        BorderThickness="3" CornerRadius="4" Margin="10">
+            <wcColorPicker:FlipPanel.FrontContent>
+                <StackPanel Margin="6">
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Padding" Value="5"></Setter>
+                            <Setter Property="Margin" Value="5,5,5,0"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="DarkOrange">
+                        Это передняя сторона элемента FlipPanel
+                    </TextBlock>
+                    <Button>Первая кнопка</Button>
+                    <Button>Вторая кнопка</Button>
+                    <Button>Третья кнопка</Button>
+                    <Button>Четвертая кнопка</Button>
+                </StackPanel>
+            </wcColorPicker:FlipPanel.FrontContent>
+            <wcColorPicker:FlipPanel.BackContent>
+                <Grid Margin="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock TextWrapping="Wrap" FontSize="16" Foreground="DarkOrange">
+                        Это обратная сторона элемента управления FlipPanel
+                    </TextBlock>
+                    <Button Grid.Row="1" Margin="3" Padding="10" Content="Перевернуть назад?"
+                            HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Click="Button_Click"></Button>
+                </Grid>
+            </wcColorPicker:FlipPanel.BackContent>
+        </wcColorPicker:FlipPanel>
     </Grid>
 </Window>

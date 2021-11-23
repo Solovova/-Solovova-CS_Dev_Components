@@ -10,18 +10,23 @@ namespace SoloVova.Dev.CSCompGraph{
             InitializeComponent();
         }
         
-        private void graphCandle_ColorChanged0(object sender, RoutedPropertyChangedEventArgs<Color> e)
-        {
-            if (Txb0 != null){
-                Txb0.Text = e.NewValue.ToString();
-            }
-        }
+        // private void graphCandle_ColorChanged0(object sender, RoutedPropertyChangedEventArgs<Color> e)
+        // {
+        //     if (Txb0 != null){
+        //         Txb0.Text = e.NewValue.ToString();
+        //     }
+        // }
+        //
+        // private void graphCandle_ColorChanged1(object sender, RoutedPropertyChangedEventArgs<Color> e)
+        // {
+        //     if (Txb1 != null){
+        //         Txb1.Text = e.NewValue.ToString();
+        //     }
+        // }
         
-        private void graphCandle_ColorChanged1(object sender, RoutedPropertyChangedEventArgs<Color> e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (Txb1 != null){
-                Txb1.Text = e.NewValue.ToString();
-            }
+            panel.IsFlipped = !panel.IsFlipped;
         }
     }
 }

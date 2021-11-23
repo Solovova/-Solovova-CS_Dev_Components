@@ -38,7 +38,12 @@ namespace SoloVova.Dev.WCGraph{
         {
             base.OnRender(drawingContext);
             Rect bounds = new Rect(0, 0, base.ActualWidth, base.ActualHeight);
-            drawingContext.DrawRectangle(GetForegroundBrush(), null, bounds);
+
+            var brush = new SolidColorBrush(Colors.Brown);
+            var pen = new Pen(brush, 1.0);
+            drawingContext.DrawLine(pen, new Point(100,0),new Point(100,100));
+            drawingContext.DrawRectangle(brush,pen,new Rect(90,20,20,60));
+            //drawingContext.DrawRectangle(GetForegroundBrush(), null, bounds);
         }
 
         private Brush GetForegroundBrush()
